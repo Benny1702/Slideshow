@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Slideshow</title>
+</head>
+<header>
+    <h1>Slideshow</h1>
+    <p>V.1.1</p>
+</header>
+<div class="progress">
+    <div class="progress-bar">
+
+    </div>
+</div>
+<body>
+    <div class="slideshow">
+        <div id="slide" class="slide">
+            <img id="image" src="img/img1.jpg" class="slide-bild">
+        </div>
+        <a class="pfeil pfeil-links" onclick="switchSlideNumber(-1)"><span>&#10094;</span></a>
+        <a class="pfeil pfeil-rechts" onclick="switchSlideNumber(1)"><span>&#10095;</span></a>
+
+    </div>
+    <div class="options">
+        <p>Optionen</p>        
+        <button onclick="toggleFullScreen()"><p style="font-size: 20px;">&#8632;</p>Vollbild</button>
+        <button onclick="extras(1)"><p style="font-size: 20px;">&#64;</p>Support</button>
+        <button onclick="extras(2)"><p style="font-size: 20px;">&#10162;</p>Dateiverzeichnis</button>
+    </div>
+    <div id="mb" class="msgbox active">
+        <p id="msg" class="message">Das ist Platzhaltertext</p>
+        <a class="quitbtn" onclick="removeMsgBox()"><span>&#10006;</span></a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
